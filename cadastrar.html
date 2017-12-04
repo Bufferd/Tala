@@ -1,31 +1,38 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
-<head>
-<meta charset='UTF-8'>
-</head>
+<style>
+.vertical-menu {
+    width: 500px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 50px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #6a5acd;
+    color: white;
+}
+</style>
 <body>
-Digite o nome do item:<br>
-  <input type="text" name="produto" placeholder="Computador">
-<br><br>
-</body>
-Digite a categoria:<br>
-  <input type="text" name="categoria" placeholder="Periféricos">
- <br><br>
-</body>
-Digite a sua localidade:<br>
- <input type="text" name="localidade" placeholder="SENAI">
- <br><br>	
-Digite a localização do prédio:<br>
- <input type="text" name="predio" placeholder="São Paulo">
-<br><br>
-</body>
-</form> 
-Descrição do item:<br>
-<form action="/ok.html" method="post">
-<input type="text" name="item" placeholder="">
-<br><br>
-<input type="submit" value="Entrar">
- <br><br>
-<a href="/3menu.html">Voltar...</a>
+<center>
+<br>
+<br>
+<div class="vertical-menu"><center>
+  <a href="#" class="active">Cadastrar</a>
+  <a href="/localidade.html">Cadastrar Localidade</a>
+ <a href="/item.html"Cadastrar item</a>
+ <a href="/usuario.html"Cadastrar usuário</a>
+  <a href="/3menu.html">Voltar para o menu</a></center>
+</div>
+<center>
 </body>
 </html>
