@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset='UTF-8'>
@@ -30,3 +29,35 @@ Quantidade:<br>
 <a href="/3menu.html">Voltar...</a>
 </body>
 </html>
+
+read POST
+foi(){
+cat << EOFFF
+content-type: text/html
+ 
+<html>
+<h1>oioi</h1>
+<a href="../3menu.html">voltar</a>
+</html>
+EOFFF
+
+
+naofoi(){
+cat <<EOFFF
+content-type: text/html
+ 
+<html>
+  oi</h1>
+   10 <a href="../3menu.html">voltar</a>
+  </html>
+   EOFFF
+}
+cadastro=$(echo $POST | cut -d"&" -f1 | cut -d"=" -f2)
+if [[ ! $("$cadastro"  ]] ; then
+echo "$usuario:$senha" >> senha.pwd
+         foi
+else
+       naofoi
+fi
+
+         
